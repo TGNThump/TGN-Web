@@ -1,2 +1,5 @@
 core/vendor/
 vendor/
+mode.php
+app/config/*
+!app/config/template.php
