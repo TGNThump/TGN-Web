@@ -1,4 +1,4 @@
-core/vendor/
+core/assets/vendor/
 vendor/
 mode.php
 app/config/*

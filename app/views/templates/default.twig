@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include 'templates/partials/head.twig' with {
+		pageTitle: block('pageTitle'),
+		pageDescription: block('pageDescription'),
+		pageTags: block('pageTags')
+	} %}
+    <body class="preload" onload="$('body').removeClass('preload');">
+    	{% include 'templates/partials/header.twig' %}
+    	<div class="content-box">
+    		{% block content %}{% endblock %}
+    	</div>
+    	{% include 'templates/partials/footer.twig' %}
+	</body>
+</html>

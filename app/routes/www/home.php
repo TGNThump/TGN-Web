@@ -1,5 +1,5 @@
 <?php
 
 $app->get("/", function() use ($app){
-	die("Home");
+	$app->render('home.twig');
 })->name('home');
