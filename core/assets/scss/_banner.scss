@@ -1,0 +1,37 @@
+.preload{
+	.twitch-banner{
+		max-height: 0px;
+	}
+}
+
+.banner{
+	overflow: hidden;
+	padding: 0px;
+}
+
+.twitch-banner{
+	max-height: 0px;
+	background: url('http://core.terragaming.co.uk/common/img/banner/twitch_bg.jpg') no-repeat #1B1B1B;
+	background-size: auto;
+	background-position: top center;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(.5, .15, .75, .75);
+
+	@include media-breakpoint-up(lg) {
+		max-height: 527px;
+	}
+}
+
+.tcAwakened-banner{
+	background: url('http://core.terragaming.co.uk/common/img/banner/tcAwakened-banner.jpg') no-repeat #1B1B1B;
+	background-size: auto;
+	background-position: top center;
+}
+
+.terraspeak-banner{
+	background: url('http://core.terragaming.co.uk/common/img/banner/terraspeak-banner.jpg') no-repeat #1B1B1B;
+	background-size: auto;
+	background-position: top center;
+}
+

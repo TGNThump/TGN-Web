@@ -1,4 +1,5 @@
 core/assets/vendor/
+core/assets/.sass-cache/
 vendor/
 mode.php
 app/config/*

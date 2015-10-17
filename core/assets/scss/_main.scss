@@ -1,0 +1,40 @@
+body, html {
+	height: 100%;
+}
+
+.content-box{
+	background-color: #fff;
+
+	min-height: calc(100% - 299px);
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+
+	@include media-breakpoint-down(md) {
+		min-height: calc(100% - 113px);
+	}
+
+	.container{
+		padding: 15px;
+	}
+}
+
+.container{
+	width: 100%;
+	max-width: 100%;
+
+	@include media-breakpoint-up(xl) {
+		max-width: map-get($grid-breakpoints, xl);
+	}
+}
+
+.container-fixed {
+  @include make-container();
+
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $container-max-width;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+header {
+	.navbar{
+		padding: 0px;
+		background: url('http://core.terragaming.co.uk/common/img/navbar/navbar_bg.png') repeat-y scroll 50% 70% #1F1F1F;
+		background-position: center top;
+		border-bottom: 3px solid rgba(100, 100, 100, 0.5);
+
+		.container{
+			// border: 1px solid red;
+
+			width: 100%;
+			max-width: 100%;
+
+			@include media-breakpoint-up(xl) {
+				max-width: map-get($grid-breakpoints, xl);
+			}
+
+			.navbar-header,
+			.nav{
+				margin: 0px;
+				float: left;
+				font-size: 13px;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+			}
+
+			.navbar-header{
+				border-right: 3px solid rgba(100, 100, 100, 0.2);
+
+				.navbar-brand{
+					margin: 0px 0px 0px -10px;
+					padding: 15px 10px;
+					height: 50px;
+
+					img {
+						height: 25px;
+					}
+				}
+			}
+
+			.nav{
+				padding: 0px 10px;
+
+				li {
+					float: left;
+
+					a{
+						text-shadow: 1px 1px 1px #000;
+						color: #CF3600;
+						padding: 15px;
+						display: block;
+						position: relative;
+
+						&:active{
+							color: #ccc;
+						}
+
+						&,
+						&:active,
+						&:hover,
+						&:focus{
+							text-decoration: none;
+						}
+					}
+
+					&:hover > a{
+						color: #fff;
+						cursor: pointer;
+						text-shadow: 1px 1px 1px #000;
+					}
+				}
+
+				span{
+					padding: 15px 5px;
+					color: #62737E;
+					float: left;
+					display: block;
+				}
+
+				.dropdown{
+					background: none;
+					
+					.dropdown-menu{
+						font-size: 13px;
+						background-color: rgba(25, 25, 25, 0.9);
+						border: 1px solid rgba(0, 0, 0, 0.15);
+						border-top: 3px solid rgba(0, 0, 0, 0.176);
+						border-radius: 0px 0px 4px 4px;
+						box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+						background-clip: padding-box;
+						margin: 0px;
+						padding-top: 1px;
+
+						li{
+							float: none;
+
+							a{
+								text-shadow: 1px 1px 1px #000;
+								color: #CF3600;
+								padding: 3px 10px;
+
+								&:active{
+									color: #ccc;
+								}
+							}
+
+							&:hover > a{
+								color: #fff;
+								cursor: pointer;
+								text-shadow: 1px 1px 1px #000;
+							}
+						}
+					}
+
+					&:hover > .dropdown-menu{
+						display: inherit;
+					}
+
+				}
+
+				
+			}
+
+			.navbar-right{
+				margin-right: -10px;
+				padding-right: 10px;
+				float: right;
+				
+				li a{
+					padding: 15px 5px;
+				}
+			}
+
+
+		}
+	}
+
+	.navbar-clear{
+		height: 50px;
+	}
+}

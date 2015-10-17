@@ -7,9 +7,9 @@
 	} %}
     <body class="preload" onload="$('body').removeClass('preload');">
     	{% include 'templates/partials/header.twig' %}
-    	<div class="content-box">
+    	<section class="content-box">
     		{% block content %}{% endblock %}
-    	</div>
+    	</section>
     	{% include 'templates/partials/footer.twig' %}
 	</body>
 </html>

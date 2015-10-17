@@ -1,0 +1,19 @@
+// Core Variables and Mixins
+@import "varibles";
+@import "mixins";
+
+// External Toolkits
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+@import "../vendor/font-awesome/scss/font-awesome.scss";
+
+// Core CSS
+@import "main";
+
+// Components
+@import "header";
+@import "footer";
+@import "banner";
+@import "modal";
+
+// Responsive Overide
+@import "responsive";
