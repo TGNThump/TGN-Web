@@ -4,3 +4,6 @@ vendor/
 mode.php
 app/config/*
 !app/config/template.php
+*.scssc
+.idea/
+*.ps1
