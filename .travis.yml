@@ -1,6 +1,6 @@
 language: php
 php:
-	- nightly
+    - nightly
 
 install:
-	- composer install
+    - composer install
