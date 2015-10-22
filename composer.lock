@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4cd90b646977d85cf86f5239163363bb",
-    "content-hash": "d57531f8bb2620f65eee96255f1a3370",
+    "hash": "a2e0c6921dd6cfd361937ab14ad35e1f",
+    "content-hash": "8673cc2ed79e50449426854117881d58",
     "packages": [
         {
             "name": "alexgarrett/violin",
@@ -290,16 +290,16 @@
         },
         {
             "name": "fxp/composer-asset-plugin",
-            "version": "v1.0.3",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francoispluchino/composer-asset-plugin.git",
-                "reference": "c2b0406ac19e9ea2d9556987e827d4e7f6924fde"
+                "reference": "8e22c18bbe6a5b7831a9b8488e02b85398048c04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/c2b0406ac19e9ea2d9556987e827d4e7f6924fde",
-                "reference": "c2b0406ac19e9ea2d9556987e827d4e7f6924fde",
+                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/8e22c18bbe6a5b7831a9b8488e02b85398048c04",
+                "reference": "8e22c18bbe6a5b7831a9b8488e02b85398048c04",
                 "shasum": ""
             },
             "require": {
@@ -313,7 +313,7 @@
             "extra": {
                 "class": "Fxp\\Composer\\AssetPlugin\\FxpAssetPlugin",
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -342,7 +342,7 @@
                 "npm",
                 "package"
             ],
-            "time": "2015-07-29 12:23:21"
+            "time": "2015-10-17 09:47:56"
         },
         {
             "name": "guzzle/guzzle",

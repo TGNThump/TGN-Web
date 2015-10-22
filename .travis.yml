@@ -5,3 +5,5 @@ php:
 install:
     - composer install --no-interaction
     - composer update --no-interaction
+
+script: phpunit --bootstrap vendor/autoload.php tests/
