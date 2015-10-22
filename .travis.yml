@@ -3,4 +3,5 @@ php:
     - nightly
 
 install:
+    - composer install --no-interaction
     - composer update --no-interaction
