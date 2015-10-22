@@ -6,4 +6,4 @@ install:
     - composer install --no-interaction
     - composer update --no-interaction
 
-script: phpunit --bootstrap vendor/autoload.php tests
+script: phpunit --bootstrap tests/autoload.php --no-globals-backup tests
