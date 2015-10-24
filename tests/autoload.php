@@ -1,5 +1,5 @@
 <?php
 @session_start();
-define('INC_ROOT', dirname(__DIR__));
-require INC_ROOT . '/app/start.php';
+$testing = true;
+require dirname(__DIR__) . '/app/start.php';
 ini_set('display_errors', "On");
