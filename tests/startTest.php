@@ -22,7 +22,7 @@ class StartTest extends PHPUnit_Framework_TestCase{
 		$this->assertNotNull($this->app->view);
 	}
 
-	/*
+	/**
      * @dataProvider configKeysProvider
     */
 	public function testConfigOptions($var){
