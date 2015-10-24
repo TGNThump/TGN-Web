@@ -16,7 +16,9 @@ define('INC_ROOT', dirname(__DIR__));
 require INC_ROOT . '/vendor/autoload.php';
 
 $mode = "production";
-if (file_exists(INC_ROOT . '/mode.php')){
+if (isset($testing)){
+	$mode = "template";
+} else if (file_exists(INC_ROOT . '/mode.php')){
 	$mode = file_get_contents(INC_ROOT . '/mode.php');
 }
 
