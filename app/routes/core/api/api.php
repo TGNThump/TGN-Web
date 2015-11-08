@@ -1,5 +1,7 @@
 <?php
 
+require INC_ROOT . '/app/routes/core/api/filters.php';
+
 function versions($app){
 	return array(
 		'v1' => array(
@@ -27,8 +29,7 @@ $app->group('/api', function () use ($app) {
 
 $app->error(function (\Exception $e) use ($app) {
 	echo json_encode(array(
-		'error' => true,
-		'code' => $app->response->getStatus(),
+		'error' => $app->response->getStatus(),
 		'message' => $e->getMessage()
 	));
 });
@@ -36,8 +37,7 @@ $app->error(function (\Exception $e) use ($app) {
 $app->notFound(function () use ($app) {
 	$app->response->setStatus(404);
     echo json_encode(array(
-		'error' => true,
-		'code' => $app->response->getStatus(),
+		'error' => $app->response->getStatus(),
 		'message' => 'Endpoint \'' . $app->request->getResourceUri() .  '\' Not Found'
 	));
 });

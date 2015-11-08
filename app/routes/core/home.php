@@ -8,7 +8,7 @@ $app->get("/", function() use ($app){
 
 	echo json_encode(array(
 		'api' => $app->urlFor('api'),
-		'oauth' => '',
-		'common' => ''
+		'oauth' => $app->urlFor('oauth'),
+		'common' => $app->urlFor('core') . 'common'
 	));
-});
+})->name('core');

@@ -37,5 +37,29 @@ return [
 	'sendgrid' => [
 		'token' => '',
 		'from' => ''
+	],
+
+	'oauth' => [
+		'tgn' => [
+			'clientId' => '',
+			'clientSecret' => '',
+			'version' => ''
+		],
+
+		'facebook' => [
+			'clientId' => '',
+			'clientSecret' => '',
+			'version' => ''
+		],
+
+		'google' => [
+			'clientId' => '',
+			'clientSecret' => ''
+		],
+
+		'github' => [
+			'clientId' => '',
+			'clientSecret' => ''
+		]
 	]
 ];
